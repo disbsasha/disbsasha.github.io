@@ -1,0 +1,57 @@
+nav {
+    text-align: center;
+    background-color: pink;
+    position:fixed;
+    width: 100%;
+    font-family: "Georgia"
+}
+
+.nav-wrapper li {
+    display: inline;
+    padding: 30px;
+}
+
+.nav-wrapper a {
+    color: white;
+}
+
+#home {
+    background-color: white;
+    height: 600pxpx;
+    padding: 50px 20px;
+}
+
+#about {
+    background-color: lightgrey;
+    height: 600px;
+    padding: 50px 20px;
+}
+
+#resume{
+    background-color: antiquewhite;
+    height: 1000px;
+    padding: 10px;
+}
+
+#contact{
+    background-color: bisque;
+    height: 1000px;
+    padding: 50px 20px;;
+}
+
+#resumepng{
+    display:block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding:50px;
+}
+
+.header {
+    text-align: center;
+    font-family: "Georgia";
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+}
