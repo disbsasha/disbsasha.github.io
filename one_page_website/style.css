@@ -1,0 +1,24 @@
+#header {
+    font-style: italic;
+    font-family: "Verdana";
+    color: forestgreen;
+}
+
+#header2 {
+    font-size: 100px;
+
+}
+
+#paragraph {
+    font-style: italic;
+    font-family: "Comic Sans";
+    color: #FFC300;
+    
+}
+
+div{
+    width: 250px;
+    border: 20px solid #FFC300;
+    padding: 5px;
+    margin: 25px;
+}

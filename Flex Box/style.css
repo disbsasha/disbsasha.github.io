@@ -1,0 +1,39 @@
+nav {
+    text-align: center;
+    background-color: pink;
+    position:fixed;
+    width: 100%;
+}
+
+.nav-wrapper li {
+    display: inline;
+    padding: 30px;
+}
+
+.nav-wrapper a {
+    color: red;
+}
+
+#home {
+    background-color: red;
+    height: 300px;
+    padding: 50px 20px;
+}
+
+#about {
+    background-color: lightgrey;
+    height: 300px;
+    padding: 50px 20px;
+}
+
+#resume{
+    background-color: blue;
+    height: 300px;
+    padding: 50px 20px;
+}
+
+#contact{
+    background-color: green;
+    height: 300px;
+    padding: 50px 20px;
+}
