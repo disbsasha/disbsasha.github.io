@@ -1,0 +1,27 @@
+.container{
+    margin:0  auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: repeat(3,1fr);
+    grid-auto-rows: 50px;
+}
+
+.container > div {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: pink
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end:4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}

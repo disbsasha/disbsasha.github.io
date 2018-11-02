@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<body style="background-image:url(sailor%20moon%20wallpaper.jpg)">
+<div style="">
+    <figure style="position: relative;">
+      <a href="index.html"><img src="folder.png" alt="folder icon" style="width: 100.25px; height: 97px;"></a>
+      <figcaption style="position: absolute; left: 20px; color: white; font-family:'tahoma'">Home</figcaption>
+    </figure>
+</div>
+<br>
+<div style="">
+    <figure style="position: relative;">
+      <a href="me.html"><img src="folder.png" alt="folder icon" style="width: 100.25px; height: 97px;"></a>
+      <figcaption style="position: absolute; left: 20px; color: white; font-family:'tahoma'">Who? Me</figcaption>
+    </figure>
+</div>
+<br>
+<div style="">
+    <figure style="position: relative;">
+      <a href="mywork.html"><img src="folder.png" alt="folder icon" style="width: 100.25px; height: 97px; background-color: #d1e8fd"></a>
+      <figcaption style="position: absolute; left: 20px; color: black; font-family:'tahoma'; background-color: #d1e8fd">My Work</figcaption>
+    </figure>
+    
+</div> 
+    <div id="divResize">
+        <img src="gallery.png" class="center" style="width:820px; height:700px; position:relative; bottom:420px; right:-200px">
+    </div>
+    
+    <div id="divContainer">
+    <a href="https://www.youtube.com/watch?v=HqtwhRf8UOU&"><img src="video1.png" class="center" style="width:352.67px; height:260.67px; position:absolute; bottom:820px; right:800px"alt="this is my movie The Trees Have Eyes"></a>
+    </div>
+    
+    <div id="divContainer1">
+        <a href="https://www.youtube.com/watch?v=XL7bFq9ybVQ&t="><img src="video2.png" class="center" style="width:352.67px; height:260.67px; position:absolute; bottom:500px; right:900px"alt="this is my movie 4 Eyes"></a> 
+    </div>
+    
+    <div id="divContainer2">
+    <a href="https://www.youtube.com/watch?v=yNAvHYdWZlM&t="><img src="video3.png" class="center" style="width:352.67px; height:260.67px; position:absolute; bottom:850px; right:10px"alt="this is my movie anime intro"></a> 
+    </div>
+    
+    <div id="divContainer3">
+    <a href="https://www.youtube.com/watch?v=evnemYBmqtQ&t="><img src="video4.png" class="center" style="width:352.67px; height:260.67px; position:absolute; bottom:500px; right:200px"alt="this is my movie Manic Pixie Dream Couple"></a> 
+    </div>
+    
+        
+        
+        <script>
+    var element_pos = 0;    
+    var iCnt = 0;
+    $(document).ready(function() {
+
+        $(function() { $('#divContainer').draggable(); });
+        $(function() { $('#divContainer1').draggable(); });
+        $(function() { $('#divContainer2').draggable(); });
+        $(function() { $('#divContainer3').draggable(); });
+
+        $(function() { $("#divResize").draggable().resizable(); });
+
+        $('#btClickMe').click(function() {
+
+            var dynamic_div = $(document.createElement('div')).css({
+                border: '1px dashed', position: 'absolute', left: element_pos,
+                top: $('#divContainer').height() + 20,
+                width: '120', height: '120', padding: '3', margin: '0'
+            });
+
+            element_pos = element_pos + $('#divContainer').width() + 20;
+
+            $(dynamic_div).append('You can drag me too');
+
+            $(dynamic_div).appendTo('#divContainer').draggable();
+
+            iCnt = iCnt + 1;
+        });
+    });
+</script>
+</body>
+</html>
