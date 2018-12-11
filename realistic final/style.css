@@ -1,0 +1,43 @@
+body{
+/*    background-color: black;*/
+    background: url('queenrevised.jpg') no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    display:inline;
+}
+.blur {
+  -webkit-animation: blur 5s infinite;
+}
+
+@-webkit-keyframes blur {
+  0%, 100%  { -webkit-filter: blur(0px); }
+  50% { -webkit-filter: blur(10px); }
+}
+
+/*
+#wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: auto;
+  white-space: nowrap;
+  
+}
+.content {
+  border: 1px solid white;
+  background: black; 
+  display: inline;
+}
+*/
+
+img {
+    display: inline-block;
+}
+.text {
+    color: white; 
+    float: right;
+    display: inline-block;
+    width: calc(84% - 740px); 
+}
+
